@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &90801419078132135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3010808103535597577}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3010808103535597577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90801419078132135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 869721359737554028}
+  - {fileID: 6772120772472815779}
+  m_Father: {fileID: 1152780427640095209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242417373690277939
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +243,130 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4328978753601828279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6772120772472815779}
+  - component: {fileID: 8900193137485094794}
+  m_Layer: 0
+  m_Name: Forward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6772120772472815779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328978753601828279}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3010808103535597577}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8900193137485094794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328978753601828279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6466c3cf71ca37f46bf14f86da1a9f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_whatToListen: {fileID: -7804650396507937009, guid: 8df7ca714d5049749b996342115da76f,
+    type: 3}
+  m_onAxisChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1223871357518684083}
+        m_TargetAssemblyTypeName: Eloi.KillDozerMono, Assembly-CSharp
+        m_MethodName: SetMoveBackForwardPercent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_currentValue: 0
+--- !u!1 &4573233854326042725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869721359737554028}
+  - component: {fileID: 8671321292000397426}
+  m_Layer: 0
+  m_Name: Rotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869721359737554028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4573233854326042725}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3010808103535597577}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8671321292000397426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4573233854326042725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6466c3cf71ca37f46bf14f86da1a9f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_whatToListen: {fileID: 6082049412738904159, guid: 8df7ca714d5049749b996342115da76f,
+    type: 3}
+  m_onAxisChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1223871357518684083}
+        m_TargetAssemblyTypeName: Eloi.KillDozerMono, Assembly-CSharp
+        m_MethodName: SetRotateLeftRightPercent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_currentValue: 0
 --- !u!1 &5595352053217235808
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +481,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1152780427640095209}
+  - component: {fileID: 7890553657014150363}
+  - component: {fileID: 1223871357518684083}
   m_Layer: 0
   m_Name: KillDozer
   m_TagString: Untagged
@@ -346,11 +505,57 @@ Transform:
   m_Children:
   - {fileID: 8156844141164946625}
   - {fileID: 5859635510588564519}
-  - {fileID: 7642494812269240373}
   - {fileID: 1212984551875260370}
   - {fileID: 9175880822726111775}
+  - {fileID: 3010808103535597577}
+  - {fileID: 623948070702362982}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &7890553657014150363
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142246032757503831}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1223871357518684083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142246032757503831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f15a554fbfa34f459516680d46b22f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_rotationLeftRight: 90
+  m_frontalSpeed: 0.3
+  m_backSpeed: 0.1
+  m_rotateLeftRightPercent: 0
+  m_moveFrontBackPercent: 0
+  m_whatToMove: {fileID: 1152780427640095209}
 --- !u!1 &6773281090011733743
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +661,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8490615674957612390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623948070702362982}
+  m_Layer: 0
+  m_Name: Pivot Arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &623948070702362982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490615674957612390}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.01066173, y: -0, z: -0, w: 0.99994314}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7642494812269240373}
+  m_Father: {fileID: 1152780427640095209}
+  m_LocalEulerAnglesHint: {x: -1.222, y: 0, z: 0}
 --- !u!1 &8791176681501207958
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,10 +722,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.1807215, y: -0, z: -0, w: 0.98353434}
   m_LocalPosition: {x: 0, y: 0.044, z: 0.116}
-  m_LocalScale: {x: 0.156762, y: 0.07802029, z: 0.0217725}
+  m_LocalScale: {x: 0.156762, y: 0.07802028, z: 0.0217725}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1152780427640095209}
+  m_Father: {fileID: 623948070702362982}
   m_LocalEulerAnglesHint: {x: -20.824, y: 0, z: 0}
 --- !u!33 &4406997268489578884
 MeshFilter:
